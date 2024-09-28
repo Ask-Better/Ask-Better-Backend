@@ -11,4 +11,9 @@
  * limitations under the License.
  */
 
-rootProject.name = "askbetter"
+package live.askbetter.playmode.socket.gamepacket.c2s
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class AnswerPacket(val num: Int)

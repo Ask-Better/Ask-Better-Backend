@@ -11,4 +11,6 @@
  * limitations under the License.
  */
 
-rootProject.name = "askbetter"
+package live.askbetter.session.account
+
+data class AccountSession(val sessionId: String)

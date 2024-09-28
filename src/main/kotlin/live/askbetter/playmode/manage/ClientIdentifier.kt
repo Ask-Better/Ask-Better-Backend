@@ -11,4 +11,6 @@
  * limitations under the License.
  */
 
-rootProject.name = "askbetter"
+package live.askbetter.playmode.manage
+
+data class ClientIdentifier(val id: String, val username: String)

@@ -11,4 +11,9 @@
  * limitations under the License.
  */
 
-rootProject.name = "askbetter"
+package live.askbetter.playmode.json
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class StartGameParams(val id: String)

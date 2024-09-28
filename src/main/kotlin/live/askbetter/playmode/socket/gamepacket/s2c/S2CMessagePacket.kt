@@ -11,4 +11,9 @@
  * limitations under the License.
  */
 
-rootProject.name = "askbetter"
+package live.askbetter.playmode.socket.gamepacket.s2c
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class S2CMessagePacket(val message: String)

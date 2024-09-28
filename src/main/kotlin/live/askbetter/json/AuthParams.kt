@@ -11,4 +11,9 @@
  * limitations under the License.
  */
 
-rootProject.name = "askbetter"
+package live.askbetter.json
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class AuthParams(val username: String, val passwordHash512: String)

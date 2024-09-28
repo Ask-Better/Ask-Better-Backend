@@ -22,11 +22,11 @@ plugins {
     id("org.jetbrains.kotlin.plugin.serialization") version "2.0.20"
 }
 
-group = "live.qwiz"
+group = "live.askbetter"
 version = "0.0.1"
 
 application {
-    mainClass.set("live.qwiz.ApplicationKt")
+    mainClass.set("live.askbetter.ApplicationKt")
 
     val isDevelopment: Boolean = project.ext.has("development")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")

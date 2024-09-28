@@ -11,4 +11,21 @@
  * limitations under the License.
  */
 
-rootProject.name = "askbetter"
+package live.askbetter.database.quiz.part
+
+import kotlinx.serialization.json.JsonElement
+import live.askbetter.database.quiz.part.select.Select
+import live.askbetter.to
+
+class Parts {
+    companion object {
+        const val SELECT = "select"
+
+        fun parseFromType(type: String, obj: JsonElement): QuizPartContent {
+            return when (type) {
+                SELECT -> obj.to<Select>()
+                else -> throw IllegalArgumentException("Invalid type")
+            }
+        }
+    }
+}

@@ -11,4 +11,9 @@
  * limitations under the License.
  */
 
-rootProject.name = "askbetter"
+package live.askbetter.config.parts
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class ConfigTree(val db: DatabaseConfig, val session: SessionConfig)

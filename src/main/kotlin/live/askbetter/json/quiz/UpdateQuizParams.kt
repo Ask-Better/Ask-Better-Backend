@@ -11,4 +11,10 @@
  * limitations under the License.
  */
 
-rootProject.name = "askbetter"
+package live.askbetter.json.quiz
+
+import live.askbetter.database.quiz.part.QuizPart
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class UpdateQuizParams(val title: String, val description: String, val parts: HashSet<QuizPart>, val id: String)
